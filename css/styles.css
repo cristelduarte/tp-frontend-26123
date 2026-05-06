@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6 rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #efe7da;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    /* arriba y abajo al usar dos medidas */
+    margin: 3rem 0;
+}
+
+h2{
+    color: #232809;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+header, footer {
+    background-color: #eae2d5;
+    color: #232809;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo{
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.logo, .header-nav  ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    /* separar los elementos */
+    gap: 2rem;
+}
+
+.footer-list li {
+    padding: 1rem;
+}
+
+.footer-list li img {
+    width: 5rem;
+    padding: 0.5rem;
+}
+
+.parrafo-footer {
+    padding-left: 1.5rem;
+}
+
+/* colores */
+.bg-primary{
+    background-color: #f3dbc3;
+}
+
+.bg-secondary {
+    background-color: #f7bfbe;
+}
+
+.text-dark {
+    color: #a06580;
+}
+
+.text-secondary {
+    color: #b46a69;
+}
+
+/* HOME */
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjetas {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ecdcc0;
+    color: #000023;
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.card img{
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+/* CONTACTO */
+
+.titulo-contacto{
+    margin: 2rem 0;
+}
+
+.form-contacto {
+    background-color: #ecdcc0;
+    color: #a06580;
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15)
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.grupo-input input, .grupo-input textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px black;
+    margin-bottom: 3rem;
+}
+
+.grupo-input textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.pregunta-frecuentes{
+    padding: 3rem;
+}
+.pregunta {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.respuesta {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width:600px) {
+    header, footer {
+        flex-direction: column;
+    }
+
+    .header-nav .div-logo{
+        margin: 0;
+    }
+}

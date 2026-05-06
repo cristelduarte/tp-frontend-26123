@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>INFINITA contacto</title>
+</head>
+<body>
+    <header>
+        <div class="div-logo"><a class="logo" href="../index.html"><img src="../img/LOGO-01.png" alt="INFINITA"></a></div>
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-contacto text-secondary">CONTACTO</h1>
+        <p class="parrafo">Puedes contactarnos completando el siguiente formulario</p>
+            <!-- FORMUARIO -->
+        <form class="form-contacto" action="https://formspree.io/f/xwvyvzdy" method="POST">
+            <div class="grupo-input">
+                <label for="email"> Mail: </label>
+                <input id="email" type="email" name="email"> 
+            </div>
+            <div class="grupo-input">
+                <label for="mensaje"> Mensaje: </label>
+                <textarea id="mensaje" name="message"></textarea> 
+            </div>
+            <!--Boton de envio-->
+            <button class="btn enviar bg-secondary text-dark" type="submit">Enviar 📨</button>
+        </form>
+        <section class="pregunta-frecuentes">
+            <h2 class="titulo-contacto text-dark">Preguntas Frecuentes</h2>
+            <dl>
+                <dt class="pregunta text-secondary">¿Cual es el mínimo de compra?</dt>
+                    <dd class="respuesta">No hay minimo de compra.</dd>
+                <dt class="pregunta text-secondary">¿Cuánto tarda en despacharse mi pedido?</dt>
+                    <dd class="respuesta">El tiempo estimado de armado y despacho de pedidos es de <strong>48hs hábiles una vez acreditado el pago</strong></dd>
+                <dt class="pregunta text-secondary">¿Puede retirar o recibir mi pedido otra persona?</dt>
+                    <dd class="respuesta">Puede retirarlo cualquier persona que haya sido previamente autorizada por el comprador. 
+                        En caso de envío indicando su nombre y dni para agregarlo al rotulo correspondiente.
+                        En caso de retiro en el local, indicando número de pedido al presentarse.
+                    </dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p class="parrafo-footer">Sitio realizado por Tamara para Talento Tech</p>
+        <nav> 
+            <ul class="footer-list">
+                <li><img src="../img/whatsapp.png" alt="logo de whatsapp"></li>
+                <li><img src="../img/instagram.png" alt="logo de instagram"></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
